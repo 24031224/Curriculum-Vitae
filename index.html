@@ -1,22 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currículum Vitae – Nombre Apellido</title>
+<style>
+  :root {
+    --bg: #eef1f5;
+    --card: #ffffff;
+    --side: #1f2a44;
+    --side-text: #e8ecf5;
+    --accent: #3b82f6;
+    --text: #2b3040;
+    --muted: #6b7385;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Segoe UI", system-ui, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+    padding: 32px 16px;
+  }
+  .cv {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--card);
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  aside {
+    background: var(--side);
+    color: var(--side-text);
+    padding: 36px 26px;
+  }
+  .avatar {
+    width: 120px; height: 120px;
+    border-radius: 50%;
+    background: var(--accent);
+    display: grid; place-items: center;
+    font-size: 2.6rem; font-weight: 700; color: #fff;
+    margin: 0 auto 20px;
+  }
+  aside h2 {
+    font-size: .85rem;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 26px 0 10px;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+    padding-bottom: 6px;
+  }
+  aside ul { list-style: none; font-size: .92rem; }
+  aside li { margin-bottom: 8px; word-break: break-word; }
+  .bar { height: 6px; background: rgba(255,255,255,.15); border-radius: 3px; margin-top: 4px; }
+  .bar span { display: block; height: 100%; background: var(--accent); border-radius: 3px; }
+  main { padding: 40px 38px; }
+  header h1 { font-size: 2.1rem; line-height: 1.15; }
+  header p { color: var(--accent); font-weight: 600; margin-top: 4px; font-size: 1.1rem; }
+  section { margin-top: 28px; }
+  section h2 {
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 5px;
+    margin-bottom: 14px;
+  }
+  .item { margin-bottom: 16px; }
+  .item h3 { font-size: 1rem; }
+  .item .meta { color: var(--muted); font-size: .85rem; }
+  .item p, .item li { font-size: .93rem; }
+  .item ul { margin: 6px 0 0 18px; }
+  @media (max-width: 700px) {
+    .cv { grid-template-columns: 1fr; }
+    main { padding: 28px 22px; }
+  }
+  @media print {
+    body { background: #fff; padding: 0; }
+    .cv { box-shadow: none; border-radius: 0; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
 </head>
 <body>
-    <p style="color: purple;" >Hola mundo</p>
-    <p>carolina hernandez</p>
-    <p>carolina hernandez</p>
-    <p>carolina hernandez</p>
-    <p>carolina hernandez</p>
-    <p>carolina hernandez</p>
-    <p>carolina hernandez</p>
-    <p>carolina hernandez</p>
-    <p>carolina hernandez</p>
-    <p>carolina hernandez</p>
-    <p>carolina hernandez</p>
-    
+  <div class="cv">
+    <aside>
+      <div class="avatar">NA</div>
+
+      <h2>Contacto</h2>
+      <ul>
+        <li>📧 correo@ejemplo.com</li>
+        <li>📱 +52 000 000 0000</li>
+        <li>📍 Ciudad, País</li>
+        <li>🔗 linkedin.com/in/usuario</li>
+      </ul>
+
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML y CSS<div class="bar"><span style="width:90%"></span></div></li>
+        <li>JavaScript<div class="bar"><span style="width:75%"></span></div></li>
+        <li>Python<div class="bar"><span style="width:70%"></span></div></li>
+        <li>Git y GitHub<div class="bar"><span style="width:80%"></span></div></li>
+      </ul>
+
+      <h2>Idiomas</h2>
+      <ul>
+        <li>Español – Nativo</li>
+        <li>Inglés – Intermedio</li>
+      </ul>
+    </aside>
+
+    <main>
+      <header>
+        <h1>Nombre Apellido</h1>
+        <p>Desarrollador Web</p>
+      </header>
+
+      <section>
+        <h2>Perfil</h2>
+        <p>Estudiante apasionado por el desarrollo web, con interés en crear interfaces limpias, accesibles y funcionales. Busco oportunidades para aplicar mis conocimientos y seguir aprendiendo en equipos colaborativos.</p>
+      </section>
+
+      <section>
+        <h2>Experiencia</h2>
+        <div class="item">
+          <h3>Desarrollador Web Junior – Empresa Ejemplo</h3>
+          <div class="meta">2024 – Actualidad</div>
+          <ul>
+            <li>Desarrollo de sitios web responsivos con HTML, CSS y JavaScript.</li>
+            <li>Colaboración con diseñadores para implementar interfaces.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <h3>Prácticas Profesionales – Organización Ejemplo</h3>
+          <div class="meta">2023 – 2024</div>
+          <ul>
+            <li>Mantenimiento y mejora de páginas internas.</li>
+            <li>Documentación de procesos y pruebas básicas.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Educación</h2>
+        <div class="item">
+          <h3>Ingeniería en Sistemas Computacionales</h3>
+          <div class="meta">Universidad Ejemplo · 2022 – 2026</div>
+        </div>
+        <div class="item">
+          <h3>Bachillerato Tecnológico</h3>
+          <div class="meta">Instituto Ejemplo · 2019 – 2022</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Proyectos</h2>
+        <div class="item">
+          <h3>Portafolio Personal</h3>
+          <p>Sitio web de una sola página para mostrar proyectos y datos de contacto.</p>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
